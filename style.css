@@ -1,0 +1,111 @@
+
+body{
+         background-color:  hsl(47, 88%, 63%);
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+            justify-content: center;
+}
+.card-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 100px;
+    align-items: center;
+}
+.card{
+    max-width: 450px;
+    background-color: #f0f0f0;
+    border-radius: 3px;
+    overflow: hidden;
+    margin: 20px;
+    box-shadow: 8px 8px 0px 0px ;
+    border-radius: 20px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 9px;
+}
+.card:hover{
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+.card #img-article{
+    width: 99%;
+    border-radius: 17px;
+    /* padding: 10px; */
+    line-height: 2em;
+}
+
+.card-content{
+    padding: 30px;
+    justify-content: center;
+    padding: 10px;
+    line-height: 2em;
+}
+.card .btn{
+    background-color: hsl(47, 88%, 63%);
+    font-size: 18px;
+    padding: 8px;
+    font-weight: bold;
+    border-radius: 4px;
+}
+.card h2{
+    font-size: 20px;
+    margin-top: 20px;
+    font-weight: lighter;
+}
+.card h1{
+    margin-top: 20px;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.card p{
+    margin-top: 9px;
+    font-size: 16px;
+    padding: 6px;
+     color: hsl(0, 0%, 50%);
+}
+.card .profile{
+    display: flex;
+    flex-direction: row;
+    /* gap: 12px; */
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.profile p{
+    font-size: 19px;
+    font-weight: bold;
+    color: black;
+    
+}
+.profile img{
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+.attribution{
+    text-align: center;
+}
+@media screen and (max-width: 375px) {
+    .card-container {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .card {
+        border-radius: 0; /* Remove border-radius for smaller screens */
+        margin-bottom: 10px; /* Adjust margin for smaller screens */
+    }
+
+    .card-content {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+
+    .btn {
+        display: block; /* Make the button block-level for smaller screens */
+        width: 100%; /* Make the button fill the container width */
+        margin-bottom: 10px; 
+    }
+}
